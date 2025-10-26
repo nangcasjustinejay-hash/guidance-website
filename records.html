@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> <img src="piv.jpg" alt="School Logo">
+            <h1>Guidance and Counseling Office</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="records.html">Records</a></li>
+             <li><a href="index.html">Announcements</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+         <div class="clock" id="clock"></div>
+    </nav>
+       <section id="records" class="records">
+            <h2>Student Behavior Records</h2>
+            <p> Confidential list of students with recorded behavior issues and actions taken by the Guidance Office.
+            </p>
+            <div class="records-container">
+                <table class="records-table" id="recordsTable">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Offense</th>
+                            <th>Action Taken</th>
+                            <th>Delete record</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Reyes</td>
+                            <td>Bullying a classmate</td>
+                            <td>3 days suspension, counseling sessions scheduled.</td>
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Santos</td>
+                            <td>Cheating during exam</td>
+                            <td>Zero on exam, guidance meeting with parents.</td>
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Dela Cruz</td>
+                            <td>Habitual tardiness</td>
+                            <td>Warning issued, time management counseling.</td>
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Anna Mendoza</td>
+                            <td>Disrespect towards teacher</td>
+                            <td>Apology letter required, one-week behavioral observation.</td>
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="add-record-form">
+                <h3>Add New Student Record</h3>
+                <form id="addRecordForm"> <input type="text" id="studentName" placeholder="Student Name" required>
+                    <input type="text" id="offense" placeholder="Offense" required> <input type="text" id="actionTaken"
+                        placeholder="Action Taken" required> <button type="submit">  Add student</button>
+                </form>
+            </div>
+        </section> 
+        <footer>
+        <p>&copy; 2025 School Guidance Office. All Rights Reserved.</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
